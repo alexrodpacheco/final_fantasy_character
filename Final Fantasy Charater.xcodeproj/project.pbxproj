@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8288B72E25ACF4600051B6B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72D25ACF4600051B6B8 /* AppDelegate.swift */; };
-		8288B73025ACF4600051B6B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72F25ACF4600051B6B8 /* SceneDelegate.swift */; };
-		8288B73225ACF4600051B6B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73125ACF4600051B6B8 /* ViewController.swift */; };
+		826AB42625BF471D003A40A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72D25ACF4600051B6B8 /* AppDelegate.swift */; };
+		826AB42725BF4722003A40A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73125ACF4600051B6B8 /* ViewController.swift */; };
+		826AB42825BF4726003A40A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72F25ACF4600051B6B8 /* SceneDelegate.swift */; };
+		826AB42925BF4729003A40A6 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73325ACF4600051B6B8 /* Main.storyboard */; };
+		826AB42B25BF472C003A40A6 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73625ACF4670051B6B8 /* Assets.xcassets */; };
+		826AB42C25BF4732003A40A6 /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73825ACF4670051B6B8 /* LaunchScreen.storyboard */; };
+		826AB42E25BF4735003A40A6 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B74625AD023D0051B6B8 /* Results.swift */; };
+		826AB43025BF4738003A40A6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B74225ACFA250051B6B8 /* Character.swift */; };
+		826AB43125BF473B003A40A6 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73B25ACF4670051B6B8 /* Info.plist */; };
+		826AB43625BF6E5C003A40A6 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AB43525BF6E5C003A40A6 /* CharacterService.swift */; };
 		8288B73525ACF4600051B6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8288B73325ACF4600051B6B8 /* Main.storyboard */; };
 		8288B73725ACF4670051B6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8288B73625ACF4670051B6B8 /* Assets.xcassets */; };
 		8288B73A25ACF4670051B6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8288B73825ACF4670051B6B8 /* LaunchScreen.storyboard */; };
-		8288B74325ACFA250051B6B8 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B74225ACFA250051B6B8 /* Character.swift */; };
-		8288B74725AD023D0051B6B8 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B74625AD023D0051B6B8 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		826AB43525BF6E5C003A40A6 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		8288B72A25ACF4600051B6B8 /* Final Fantasy IX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Fantasy IX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8288B72D25ACF4600051B6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8288B72F25ACF4600051B6B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		826AB43425BF6E10003A40A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8288B74225ACFA250051B6B8 /* Character.swift */,
+				8288B74625AD023D0051B6B8 /* Results.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8288B72125ACF4600051B6B8 = {
 			isa = PBXGroup;
 			children = (
@@ -63,14 +78,15 @@
 				8288B72D25ACF4600051B6B8 /* AppDelegate.swift */,
 				8288B72F25ACF4600051B6B8 /* SceneDelegate.swift */,
 				8288B73125ACF4600051B6B8 /* ViewController.swift */,
+				826AB43525BF6E5C003A40A6 /* CharacterService.swift */,
 				8288B73325ACF4600051B6B8 /* Main.storyboard */,
 				8288B73625ACF4670051B6B8 /* Assets.xcassets */,
 				8288B73825ACF4670051B6B8 /* LaunchScreen.storyboard */,
 				8288B73B25ACF4670051B6B8 /* Info.plist */,
-				8288B74225ACFA250051B6B8 /* Character.swift */,
-				8288B74625AD023D0051B6B8 /* Results.swift */,
+				826AB43425BF6E10003A40A6 /* Models */,
 			);
-			path = "Final Fantasy IX";
+			name = "Final Fantasy IX";
+			path = "Final Fantasy Charater";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8288B72525ACF4600051B6B8 /* Build configuration list for PBXProject "Final Fantasy IX" */;
+			buildConfigurationList = 8288B72525ACF4600051B6B8 /* Build configuration list for PBXProject "Final Fantasy Charater" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,11 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8288B73225ACF4600051B6B8 /* ViewController.swift in Sources */,
-				8288B74325ACFA250051B6B8 /* Character.swift in Sources */,
-				8288B72E25ACF4600051B6B8 /* AppDelegate.swift in Sources */,
-				8288B73025ACF4600051B6B8 /* SceneDelegate.swift in Sources */,
-				8288B74725AD023D0051B6B8 /* Results.swift in Sources */,
+				826AB43125BF473B003A40A6 /* Info.plist in Sources */,
+				826AB43025BF4738003A40A6 /* Character.swift in Sources */,
+				826AB42E25BF4735003A40A6 /* Results.swift in Sources */,
+				826AB42C25BF4732003A40A6 /* LaunchScreen.storyboard in Sources */,
+				826AB42B25BF472C003A40A6 /* Assets.xcassets in Sources */,
+				826AB43625BF6E5C003A40A6 /* CharacterService.swift in Sources */,
+				826AB42925BF4729003A40A6 /* Main.storyboard in Sources */,
+				826AB42825BF4726003A40A6 /* SceneDelegate.swift in Sources */,
+				826AB42725BF4722003A40A6 /* ViewController.swift in Sources */,
+				826AB42625BF471D003A40A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +258,7 @@
 		8288B73D25ACF4670051B6B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -279,6 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "/Users/alexrodriguespacheco/Documents/GitHub/final_fantasy_character/Final Fantasy Charater.xcodeproj";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,10 +314,9 @@
 		8288B73F25ACF4670051B6B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Final Fantasy IX/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Final Fantasy Charater/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,10 +331,9 @@
 		8288B74025ACF4670051B6B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Final Fantasy IX/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Final Fantasy Charater/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8288B72525ACF4600051B6B8 /* Build configuration list for PBXProject "Final Fantasy IX" */ = {
+		8288B72525ACF4600051B6B8 /* Build configuration list for PBXProject "Final Fantasy Charater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8288B73C25ACF4670051B6B8 /* Debug */,
