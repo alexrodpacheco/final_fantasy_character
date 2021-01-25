@@ -9,16 +9,13 @@ import Foundation
 
 struct Character: Decodable {
     let avatar: String
-    let feastMatches, id: Int
+    let id: Int
     let lang, name: String
-    let server: String
 
     enum CodingKeys: String, CodingKey {
         case avatar = "Avatar"
-        case feastMatches = "FeastMatches"
         case id = "ID"
         case lang = "Lang"
         case name = "Name"
-        case server = "Server"
     }
 }
