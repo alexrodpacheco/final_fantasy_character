@@ -9,7 +9,7 @@ import Foundation
 
 class CharacterService {
     
-    func fetchCharacter() {
+    func fetchCharacter(_ completion: @escaping (Result<[Character], Error>) -> Void) {
         
         let url = "https://xivapi.com/character/search?name=zidane"
         
@@ -18,6 +18,9 @@ class CharacterService {
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     print(error!)
+                    // FIXME: Tirar prints e force unwrapps
+                        completion(.failure(error!))
+                    
                 }
                 
                 //let data = String(data: data!, encoding: .utf8)
@@ -26,9 +29,11 @@ class CharacterService {
                     let decoder = JSONDecoder()
                     let characters = try decoder.decode(Results.self, from: data!)
                     print(characters)
+                    completion(.success(characters.results))
                     
                 } catch  let error {
                     print(error)
+                    completion(.failure(error))
                 }
             }
             
