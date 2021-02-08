@@ -9,8 +9,12 @@ import UIKit
 
 class CharacterCell: UITableViewCell {
     
+    @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var avatarName: UILabel!
     @IBOutlet weak var avatarID: UILabel!
-    
-}
+   
+    }
+
+
+
 
