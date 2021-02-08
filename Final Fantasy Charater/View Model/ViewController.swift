@@ -31,9 +31,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //fetch cell
         let name = character[indexPath.row].name
+        let avatarID = String(character[indexPath.row].id)
+        let imageString = character[indexPath.row].avatar
         
         //configure cell
         cell.textLabel?.text = name
+        cell.detailTextLabel?.text = avatarID
+        
+        guard let imageUrl = URL(string: imageString) else { return  cell }
+        // Turning sync to async
+        DispatchQueue.global().async {
+            //this is happening on a background thread
+            do {
+                let content = try Data(contentsOf: imageUrl)
+                DispatchQueue.main.async {
+                    //this is happening on the main thread
+                    cell.imageView?.image = UIImage(data: content)
+                }
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+        }
         
         return cell
     }
@@ -49,5 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func characterError(error: Error) {
         print(error)
     }
+    
+    
 }
 
