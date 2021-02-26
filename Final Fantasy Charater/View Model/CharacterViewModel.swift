@@ -27,6 +27,7 @@ class CharacterViewModel {
                 self?.sucessDelegate?.characterSucess(sucess: character)
             }
         }
+
     }
     
     var sucessDelegate: CharacterSucess?
