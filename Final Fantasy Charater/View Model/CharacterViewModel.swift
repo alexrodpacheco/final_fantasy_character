@@ -10,7 +10,6 @@ import Foundation
 protocol CharacterSucess {
     func characterSucess(sucess: [Character])
 }
-
 protocol CharacterError {
     func characterError (error: Error)
 }
@@ -30,6 +29,9 @@ class CharacterViewModel {
 
     }
     
+
+
     var sucessDelegate: CharacterSucess?
     var errorDelegate: CharacterError?
 }
+

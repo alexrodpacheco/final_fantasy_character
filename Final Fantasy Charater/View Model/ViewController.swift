@@ -16,7 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        title = "Character Screen"
+        
         characterViewModel.loadCharacter()
         characterViewModel.sucessDelegate = self
         characterViewModel.errorDelegate = self
@@ -57,6 +59,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+        print(character[indexPath.row].id)
+        let detailsVC = storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController
+        
+        
+        self.navigationController?.pushViewController(detailsVC!, animated: true)
+    }
+
+    
+    
     func characterSucess(sucess: [Character]) {
         self.character = sucess
         DispatchQueue.main.async {
@@ -68,7 +81,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func characterError(error: Error) {
         print(error)
     }
-    
-    
+
 }
 
