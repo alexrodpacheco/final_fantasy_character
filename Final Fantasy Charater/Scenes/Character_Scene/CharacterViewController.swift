@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CharacterSucess, CharacterError {
+class CharacterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CharacterSucess, CharacterError {
     
     @IBOutlet weak var tableView: UITableView!
     
