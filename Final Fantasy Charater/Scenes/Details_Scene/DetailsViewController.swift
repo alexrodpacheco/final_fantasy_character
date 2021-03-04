@@ -14,15 +14,21 @@ class DetailsViewController: UIViewController, DetailSucess, DetailError {
     @IBOutlet weak var expLevelMax: UILabel!
     @IBOutlet weak var level: UILabel!
     
+    var characterID: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let detailViewModel = DetailViewModel()
         detailViewModel.sucessDelegate = self
         detailViewModel.sucessError = self
-        detailViewModel.loadDetail()
         
+        guard let id = characterID else {
+            return
+            //TODO: Apresentar tela de erro
+        }
         
+        detailViewModel.loadDetail(withId: id)
     }
     
     func detailsSucess(sucess: DetailsClass) {

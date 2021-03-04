@@ -17,9 +17,9 @@ protocol DetailError {
 
 class DetailViewModel {
     
-    func loadDetail() {
+    func loadDetail(withId id: Int) {
         let service = DetailService()
-        service.getDetails { result in
+        service.getDetails (id: id) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let classJob):

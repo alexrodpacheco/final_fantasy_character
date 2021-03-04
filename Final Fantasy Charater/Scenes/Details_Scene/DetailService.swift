@@ -9,9 +9,9 @@ import Foundation
 
 class DetailService {
     
-    func getDetails (_ completion: @escaping (Result<DetailsClass, Error>) -> Void) {
+    func getDetails (id:Int, _ completion: @escaping (Result<DetailsClass, Error>) -> Void) {
         
-        let urlString = "https://xivapi.com/character/5805404"
+        let urlString = "https://xivapi.com/character/\(id)"
         
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)

@@ -60,10 +60,8 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
-        print(character[indexPath.row].id)
         let detailsVC = storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController
-        
+        detailsVC?.characterID = character[indexPath.row].id
         
         self.navigationController?.pushViewController(detailsVC!, animated: true)
     }
