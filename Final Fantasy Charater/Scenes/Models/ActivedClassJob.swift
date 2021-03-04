@@ -5,8 +5,6 @@
 //  Created by Alex Rodrigues Pacheco on 22/02/21.
 //
 
-import Foundation
-
 struct ActiveClassJob: Decodable {
     let classID: Int
     let expLevel: Int

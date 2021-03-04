@@ -5,8 +5,6 @@
 //  Created by Alex Rodrigues Pacheco on 22/02/21.
 //
 
-import Foundation
-
 struct DetailsClass: Decodable {
     let avatar: String
     let bio: String
@@ -18,7 +16,10 @@ struct DetailsClass: Decodable {
             case bio = "Bio"
             case activeClassJob = "ActiveClassJob"
     }
-    
+
+}
+
+extension DetailsClass {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let character = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .character)
@@ -27,3 +28,4 @@ struct DetailsClass: Decodable {
         activeClassJob = try character.decode(ActiveClassJob.self, forKey: .activeClassJob)
     }
 }
+

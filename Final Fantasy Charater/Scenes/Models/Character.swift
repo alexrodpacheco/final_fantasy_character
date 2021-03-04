@@ -5,8 +5,6 @@
 //  Created by Alex Rodrigues Pacheco on 11/01/21.
 //
 
-import Foundation
-
 struct Character: Decodable {
     let avatar: String
     let id: Int

@@ -33,7 +33,7 @@ class CharacterService {
                     let decoder = JSONDecoder()
                     let characters = try decoder.decode(Results.self, from: jsonData)
                     //print(characters)
-                    completion(.success(characters.results))
+                    completion(.success(characters.characters))
                     
                     
                 } catch  let error {
