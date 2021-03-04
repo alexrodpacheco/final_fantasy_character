@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		820A83DB25E487010018F501 /* ActivedClassJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A83DA25E487010018F501 /* ActivedClassJob.swift */; };
 		8215A68225E84BFB000C8FE0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215A68125E84BFB000C8FE0 /* DetailViewModel.swift */; };
+		8264552525F1896A002BB707 /* CharacterCellService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8264552425F1896A002BB707 /* CharacterCellService.swift */; };
+		8264552725F18A67002BB707 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8264552625F18A67002BB707 /* DetailService.swift */; };
 		826AB42625BF471D003A40A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72D25ACF4600051B6B8 /* AppDelegate.swift */; };
 		826AB42725BF4722003A40A6 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B73125ACF4600051B6B8 /* CharacterViewController.swift */; };
 		826AB42825BF4726003A40A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72F25ACF4600051B6B8 /* SceneDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		820A83DA25E487010018F501 /* ActivedClassJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivedClassJob.swift; sourceTree = "<group>"; };
 		8215A68125E84BFB000C8FE0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		8264552425F1896A002BB707 /* CharacterCellService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellService.swift; sourceTree = "<group>"; };
+		8264552625F18A67002BB707 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		826AB43525BF6E5C003A40A6 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		826AB43725BF7310003A40A6 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		8288B72A25ACF4600051B6B8 /* Final Fantasy IX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Fantasy IX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8215A68125E84BFB000C8FE0 /* DetailViewModel.swift */,
+				8264552625F18A67002BB707 /* DetailService.swift */,
 				829CF3A725E727140080ADC2 /* DetailsViewController.swift */,
 			);
 			path = Details_Scene;
@@ -91,12 +96,21 @@
 		822CF52C25F1808600F86D45 /* Character_Scene */ = {
 			isa = PBXGroup;
 			children = (
-				82A53D3D25BF7C0E00A7C9F8 /* CharacterCell.swift */,
+				8264552325F1890B002BB707 /* Character_Cell */,
 				826AB43725BF7310003A40A6 /* CharacterViewModel.swift */,
 				826AB43525BF6E5C003A40A6 /* CharacterService.swift */,
 				8288B73125ACF4600051B6B8 /* CharacterViewController.swift */,
 			);
 			path = Character_Scene;
+			sourceTree = "<group>";
+		};
+		8264552325F1890B002BB707 /* Character_Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82A53D3D25BF7C0E00A7C9F8 /* CharacterCell.swift */,
+				8264552425F1896A002BB707 /* CharacterCellService.swift */,
+			);
+			path = Character_Cell;
 			sourceTree = "<group>";
 		};
 		826AB43425BF6E10003A40A6 /* Models */ = {
@@ -224,10 +238,12 @@
 				826AB42C25BF4732003A40A6 /* LaunchScreen.storyboard in Sources */,
 				826AB42B25BF472C003A40A6 /* Assets.xcassets in Sources */,
 				826AB43625BF6E5C003A40A6 /* CharacterService.swift in Sources */,
+				8264552525F1896A002BB707 /* CharacterCellService.swift in Sources */,
 				826AB43825BF7310003A40A6 /* CharacterViewModel.swift in Sources */,
 				829C054B25E475E400F56F51 /* DetailsClass.swift in Sources */,
 				826AB42925BF4729003A40A6 /* Main.storyboard in Sources */,
 				826AB42825BF4726003A40A6 /* SceneDelegate.swift in Sources */,
+				8264552725F18A67002BB707 /* DetailService.swift in Sources */,
 				826AB42725BF4722003A40A6 /* CharacterViewController.swift in Sources */,
 				820A83DB25E487010018F501 /* ActivedClassJob.swift in Sources */,
 				826AB42625BF471D003A40A6 /* AppDelegate.swift in Sources */,
