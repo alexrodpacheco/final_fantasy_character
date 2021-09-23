@@ -52,11 +52,9 @@ class DetailsViewController: UIViewController, DetailSucess, DetailError {
         } catch {
             print(error)
         }
-        
     }
     
     func detailError(error: Error) {
         print(error)
     }
-    
 }
