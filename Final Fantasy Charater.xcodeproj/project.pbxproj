@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		820A83DB25E487010018F501 /* ActivedClassJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A83DA25E487010018F501 /* ActivedClassJob.swift */; };
 		8215A68225E84BFB000C8FE0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215A68125E84BFB000C8FE0 /* DetailViewModel.swift */; };
+		82186FC026FD35E60078C678 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82186FBF26FD35E60078C678 /* API.swift */; };
+		82186FC226FD3C5C0078C678 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82186FC126FD3C5C0078C678 /* APIError.swift */; };
 		8264552525F1896A002BB707 /* CharacterCellService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8264552425F1896A002BB707 /* CharacterCellService.swift */; };
 		8264552725F18A67002BB707 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8264552625F18A67002BB707 /* DetailService.swift */; };
 		826AB42625BF471D003A40A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B72D25ACF4600051B6B8 /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		820A83DA25E487010018F501 /* ActivedClassJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivedClassJob.swift; sourceTree = "<group>"; };
 		8215A68125E84BFB000C8FE0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		82186FBF26FD35E60078C678 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		82186FC126FD3C5C0078C678 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		8264552425F1896A002BB707 /* CharacterCellService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellService.swift; sourceTree = "<group>"; };
 		8264552625F18A67002BB707 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		826AB43525BF6E5C003A40A6 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82186FBE26FD35870078C678 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				82186FBF26FD35E60078C678 /* API.swift */,
+				82186FC126FD3C5C0078C678 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		822CF52925F17F7600F86D45 /* Resoucers */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +156,7 @@
 		8288B72C25ACF4600051B6B8 /* Final Fantasy IX */ = {
 			isa = PBXGroup;
 			children = (
+				82186FBE26FD35870078C678 /* Networking */,
 				82D45A3825F17EA7008ADCB8 /* Start */,
 				822CF52925F17F7600F86D45 /* Resoucers */,
 				822CF52A25F1801300F86D45 /* Scenes */,
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				826AB43125BF473B003A40A6 /* Info.plist in Sources */,
+				82186FC026FD35E60078C678 /* API.swift in Sources */,
 				826AB43025BF4738003A40A6 /* Character.swift in Sources */,
 				826AB42E25BF4735003A40A6 /* Results.swift in Sources */,
 				82A53D3E25BF7C0E00A7C9F8 /* CharacterCell.swift in Sources */,
@@ -243,6 +258,7 @@
 				829C054B25E475E400F56F51 /* DetailsClass.swift in Sources */,
 				826AB42925BF4729003A40A6 /* Main.storyboard in Sources */,
 				826AB42825BF4726003A40A6 /* SceneDelegate.swift in Sources */,
+				82186FC226FD3C5C0078C678 /* APIError.swift in Sources */,
 				8264552725F18A67002BB707 /* DetailService.swift in Sources */,
 				826AB42725BF4722003A40A6 /* CharacterViewController.swift in Sources */,
 				820A83DB25E487010018F501 /* ActivedClassJob.swift in Sources */,
