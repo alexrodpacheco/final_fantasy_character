@@ -9,13 +9,30 @@ import UIKit
 
 class CharacterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CharacterSucess, CharacterError {
     
-    @IBOutlet weak var tableView: UITableView!
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(CharacterCell.self, forCellReuseIdentifier: "CharacterCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return tableView
+    }()
+    
+//    @IBOutlet weak var tableView: UITableView!
     
     let characterViewModel = CharacterViewModel()
     var character: [Character] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(tableView)
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
         title = "Character Screen"
         
